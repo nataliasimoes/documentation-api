@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CRUD da tabela local | API Stardew Valley</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="Projeto de desenvolvimento de uma API na matéria de Programação WEB">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/documentation-api/assets/css/0.styles.6c67f0c2.css" as="style"><link rel="preload" href="/documentation-api/assets/js/app.5d172de7.js" as="script"><link rel="preload" href="/documentation-api/assets/js/2.cc586329.js" as="script"><link rel="preload" href="/documentation-api/assets/js/7.7f947ef0.js" as="script"><link rel="prefetch" href="/documentation-api/assets/js/10.708bc55b.js"><link rel="prefetch" href="/documentation-api/assets/js/11.b6c694f0.js"><link rel="prefetch" href="/documentation-api/assets/js/12.b13ec1ae.js"><link rel="prefetch" href="/documentation-api/assets/js/13.3898a191.js"><link rel="prefetch" href="/documentation-api/assets/js/14.d7098e6f.js"><link rel="prefetch" href="/documentation-api/assets/js/15.abf2472c.js"><link rel="prefetch" href="/documentation-api/assets/js/3.e0e55647.js"><link rel="prefetch" href="/documentation-api/assets/js/4.6a0bb0c4.js"><link rel="prefetch" href="/documentation-api/assets/js/5.5451451b.js"><link rel="prefetch" href="/documentation-api/assets/js/6.68f78dc4.js"><link rel="prefetch" href="/documentation-api/assets/js/8.fa7e6ec2.js"><link rel="prefetch" href="/documentation-api/assets/js/9.67f313da.js">
+    <link rel="stylesheet" href="/documentation-api/assets/css/0.styles.6c67f0c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/documentation-api/" class="home-link router-link-active"><!----> <span class="site-name">API Stardew Valley</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/documentation-api/guide/" class="nav-link router-link-active">
+  Guia
+</a></div><div class="nav-item"><a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/documentation-api/guide/" class="nav-link router-link-active">
+  Guia
+</a></div><div class="nav-item"><a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/documentation-api/guide/" aria-current="page" class="sidebar-link">Introdução</a></li><li><a href="/documentation-api/guide/tabela-animal.html" class="sidebar-link">CRUD da tabela animal</a></li><li><a href="/documentation-api/guide/tabela-local.html" aria-current="page" class="active sidebar-link">CRUD da tabela local</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/documentation-api/guide/tabela-local.html#get-listar-locais" class="sidebar-link">Listar Locais</a></li><li class="sidebar-sub-header"><a href="/documentation-api/guide/tabela-local.html#get-listar-animais-no-local" class="sidebar-link">Listar animais no local</a></li><li class="sidebar-sub-header"><a href="/documentation-api/guide/tabela-local.html#post-cadastrar-local" class="sidebar-link">Cadastrar Local</a></li><li class="sidebar-sub-header"><a href="/documentation-api/guide/tabela-local.html#put-alterar-local" class="sidebar-link">Alterar Local</a></li><li class="sidebar-sub-header"><a href="/documentation-api/guide/tabela-local.html#delete-deletar-animal" class="sidebar-link">Deletar Animal</a></li></ul></li><li><a href="/documentation-api/guide/teste-postman.html" class="sidebar-link">Executar a API no Postman</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="crud-da-tabela-local"><a href="#crud-da-tabela-local" class="header-anchor">#</a> CRUD da tabela local</h1> <h2 id="get-listar-locais"><a href="#get-listar-locais" class="header-anchor">#</a> <t>GET</t> Listar Locais</h2> <p>ENDPOINT: <t>GET</t> /local/</p> <p>ENTRADA: NENHUMA</p> <p>SAÍDA: <code>[lista com todos os animais cadastrados na fazenda]</code></p> <p>Exemplo de saída:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;tipoLocal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Galinheiro&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;descricao&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Galinheiro presente na fazenda, possui capacidade para 50 delas&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;createdAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-06T17:09:36.887Z&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;updatedAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-06T17:09:36.887Z&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;tipoLocal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Galinheiro&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;descricao&quot;</span><span class="token operator">:</span> <span class="token string">&quot;O mais novo galinheiro da fazenda, possui capacidade para 120 galinhas&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;createdAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-06T17:11:16.005Z&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;updatedAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-06T17:11:16.005Z&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;tipoLocal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Curral&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;descricao&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Curral destinado para as vacas e os bezerros&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;createdAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-06T17:11:55.257Z&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;updatedAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-06T17:11:55.257Z&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>DESCRIÇÃO: Retorna um JSON que irá conter os dados de todos os animais
+cadastrados.</p> <hr> <h2 id="get-listar-animais-no-local"><a href="#get-listar-animais-no-local" class="header-anchor">#</a> <t>GET</t> Listar animais no local</h2> <p>ENDPOINT: <t>GET</t> /local/<strong>:id</strong></p> <p>ENTRADA: NENHUMA</p> <p>SAÍDA: <code>[lista os animais que estão no local informado]</code></p> <p>Exemplo de saída:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;localId&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;tipoAnimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Vaca&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;sexo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Femea&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;descricao&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Vaca nascida na fazenda&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;createdAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-06T18:17:17.933Z&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;updatedAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-06T18:17:17.933Z&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;localId&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;tipoAnimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vaca&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;sexo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;femea&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;descricao&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Vaca gorda&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;createdAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-09T03:38:35.548Z&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;updatedAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-09T03:38:35.548Z&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>DESCRIÇÃO: Retorna quais animais estão no local informado.</p> <hr> <h2 id="post-cadastrar-local"><a href="#post-cadastrar-local" class="header-anchor">#</a> <o>POST</o> Cadastrar Local</h2> <p>ENDPOINT: <o>POST</o> /local/</p> <p>ENTRADA:</p> <table><thead><tr><th>Atributos</th> <th style="text-align:center;">Descrição</th></tr></thead> <tbody><tr><td>tipoLocal</td> <td style="text-align:center;">Tipo do local, seja galinheiro, curral etc.</td></tr> <tr><td>descricao</td> <td style="text-align:center;">Breve descrição sobre o local cadastrado</td></tr></tbody></table> <p>SAÍDA: Mostra o local cadastrado, confirmando que o cadastro foi feito com sucesso.</p> <p>Exemplo de <strong>saída</strong>:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;tipoLocal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Chiqueiro&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;descricao&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Local onde os porcos serão criados, cabem 10 deles&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;updatedAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-10T23:15:55.173Z&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;createdAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-10T23:15:55.173Z&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>DESCRIÇÃO: :  Função que cadastra o local na fazenda.</p> <hr> <h2 id="put-alterar-local"><a href="#put-alterar-local" class="header-anchor">#</a> <b>PUT</b> Alterar Local</h2> <p>ENDPOINT: <b>PUT</b> /local/<strong>:id</strong></p> <p>ENTRADA:</p> <table><thead><tr><th>Atributos</th> <th style="text-align:center;">Descrição</th></tr></thead> <tbody><tr><td>id</td> <td style="text-align:center;">Id do local que sofrerá alterações</td></tr> <tr><td>tipoLocal</td> <td style="text-align:center;">Tipo do local, seja galinheiro, curral etc.</td></tr> <tr><td>descricao</td> <td style="text-align:center;">Breve descrição sobre o local cadastrado</td></tr></tbody></table> <p>Exemplo de <strong>entrada</strong>:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;tipoLocal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Chiqueiro&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;descricao&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Local onde os porcos serão criados, cabem 15 deles&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;updatedAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-10T23:15:55.173Z&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;createdAt&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-10T23:15:55.173Z&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>SAÍDA:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token punctuation">{</span>
+     <span class="token string">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;O local foi alterado&quot;</span>
+ <span class="token punctuation">}</span>
+
+</code></pre></div><p>DESCRIÇÃO: Função que altera os dados do local escolhido.</p> <hr> <h2 id="delete-deletar-animal"><a href="#delete-deletar-animal" class="header-anchor">#</a> <r>DELETE</r> Deletar Animal</h2> <p>ENDPOINT: <r>DELETE</r> /animal/<strong>:id</strong></p> <p>ENTRADA: NENHUMA</p> <p>SAÍDA:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token punctuation">{</span>
+     <span class="token string">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;O local foi removido&quot;</span>
+ <span class="token punctuation">}</span>
+
+</code></pre></div><p>DESCRIÇÃO:  Função que exclui o local que foi informado.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/documentation-api/guide/tabela-animal.html" class="prev">
+        CRUD da tabela animal
+      </a></span> <span class="next"><a href="/documentation-api/guide/teste-postman.html">
+        Executar a API no Postman
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/documentation-api/assets/js/app.5d172de7.js" defer></script><script src="/documentation-api/assets/js/2.cc586329.js" defer></script><script src="/documentation-api/assets/js/7.7f947ef0.js" defer></script>
+  </body>
+</html>
