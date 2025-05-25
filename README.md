@@ -44,8 +44,8 @@ A relação entre essas entidades é de **1:N (um para muitos)**:
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/nataliasimoes/documentation-api
+   cd documentation-api
    ```
 
 2. **Instale as dependências:**
