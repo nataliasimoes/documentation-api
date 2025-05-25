@@ -1,5 +1,9 @@
 # 📘 Documentação da API - Stardew Valley (Projeto Acadêmico)
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aec59962-a418-46d4-948c-0c705b0dd937" alt="Descrição da imagem" />
+</p>
+
 Esta documentação foi desenvolvida utilizando o **VuePress 1.8.0** e tem como objetivo **auxiliar o uso da API** criada pela aluna **Francisca Natália Simões de Araújo**, como parte da disciplina de **Programação Web**.
 
 ---
